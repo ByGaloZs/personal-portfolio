@@ -1,5 +1,6 @@
 import BentoGrid from '@/components/bento/BentoGrid';
 import BentoCard from '@/components/bento/BentoCard';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -36,17 +37,25 @@ export default function Home() {
       </BentoCard>
 
       {/* Featured Projects */}
-      <BentoCard className="md:col-span-4 cursor-pointer" title="Featured Projects" description="Selected work">
-        <p className="text-sm text-white/70">
-          Automated palletizing systems, HMI interfaces and vision-based solutions.
-        </p>
-      </BentoCard>
+      <Link href="/projects" className="md:col-span-4">
+        <div className="h-full">
+          <BentoCard className="h-full cursor-pointer" title="Featured Projects" description="Selected work">
+            <p className="text-sm text-white/70">
+              Automated palletizing systems, HMI interfaces and vision-based solutions.
+            </p>
+          </BentoCard>
+        </div>
+      </Link>
 
       {/* CTA */}
-      <BentoCard className="md:col-span-2 cursor-pointer" title="Let's Connect" description="Get in touch">
-        <p className="text-white/80">Interested in working together?</p>
-        <p className="text-white/80 font-medium mt-1">Let&apos;s talk.</p>
-      </BentoCard>
+      <a href="mailto:mariopadillafranco97@outlook.com" className="md:col-span-2">
+        <div className="h-full">
+          <BentoCard className="h-full cursor-pointer" title="Let's Connect" description="Get in touch">
+            <p className="text-sm text-white/70">Interested in working together?</p>
+            <p className="text-sm text-white/80 font-medium mt-1">Let&apos;s talk.</p>
+          </BentoCard>
+        </div>
+      </a>
     </BentoGrid>
   );
 }
