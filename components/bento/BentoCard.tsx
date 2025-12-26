@@ -17,11 +17,14 @@ export default function BentoCard({
     <div
       className={[
         "group relative overflow-hidden rounded-[28px]",
-        "border border-white/10 bg-black/90 backdrop-blur-xl",
-        "shadow-[0_0_0_1px_rgba(255,255,255,0.04),_0_30px_90px_-45px_rgba(0,0,0,0.9)]",
+        "border border-white/10",
+        "bg-[#18181f]",
+        "backdrop-blur-xl",
+        "shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_30px_90px_-45px_rgba(0,0,0,0.9)]",
         "transition-all duration-300 ease-out",
-        "hover:border-purple-400/50 hover:ring-2 hover:ring-purple-400/25",
-        "hover:shadow-[0_0_0_1px_rgba(168,85,247,0.35),_0_20px_60px_-35px_rgba(168,85,247,0.18),_0_30px_90px_-45px_rgba(0,0,0,0.9)]",
+        "hover:border-purple-400/60",
+        "hover:ring-2 hover:ring-purple-400/25",
+        "hover:shadow-[0_0_0_1px_rgba(168,85,247,0.35),0_20px_60px_-25px_rgba(0,0,0,0.85),0_0_36px_rgba(168,85,247,0.18)]",
         className,
       ].join(" ")}
     >
